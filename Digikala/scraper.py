@@ -121,7 +121,9 @@ def store_product_details(product):
 # Main function to orchestrate the workflow
 def main():
     # Fetch all products
-    products = get_products("notebook-netbook-ultrabook", "lenovo")
+    category = "notebook-netbook-ultrabook" # Replace with the desired category
+    brand = "lenovo" # Replace with the desired brand
+    products = get_products(category=category, brand=brand)
     
     # Loop through each product and store details
     for product in products:
